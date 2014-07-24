@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="30307" started-at="2014-07-24T15:52:42Z" finished-at="2014-07-24T15:53:12Z">
+    <groups>
+    </groups>
+    <test name="Review Board" duration-ms="30307" started-at="2014-07-24T15:52:42Z" finished-at="2014-07-24T15:53:12Z">
+      <class name="org.globant.reviewBoard.TestUnitario">
+        <test-method status="PASS" signature="before()[pri:0, instance:org.globant.reviewBoard.TestUnitario@77468bd9]" name="before" is-config="true" duration-ms="2950" started-at="2014-07-24T10:52:42Z" finished-at="2014-07-24T10:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="goToReviewRequest()[pri:0, instance:org.globant.reviewBoard.TestUnitario@77468bd9]" name="goToReviewRequest" duration-ms="27262" started-at="2014-07-24T10:52:45Z" finished-at="2014-07-24T10:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToReviewRequest -->
+        <test-method status="PASS" signature="after()[pri:0, instance:org.globant.reviewBoard.TestUnitario@77468bd9]" name="after" is-config="true" duration-ms="88" started-at="2014-07-24T10:53:12Z" finished-at="2014-07-24T10:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- org.globant.reviewBoard.TestUnitario -->
+    </test> <!-- Review Board -->
+  </suite> <!-- Suite1 -->
+</testng-results>
