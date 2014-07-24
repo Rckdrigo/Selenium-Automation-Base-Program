@@ -1,5 +1,10 @@
 package org.globant.reviewBoard;
 
+import java.awt.Dimension;
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -8,6 +13,8 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.imageio.ImageIO;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -87,5 +94,11 @@ public class ReviewRequestPage {
 	        }
 	}
 		
-	
+	public void captureScreen(String fileName) throws Exception {
+		   Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		   Rectangle screenRectangle = new Rectangle(screenSize);
+		   Robot robot = new Robot();
+		   BufferedImage image = robot.createScreenCapture(screenRectangle);
+		   ImageIO.write(image, "jpg", new File(fileName+".jpg"));
+		}
 }
